@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1 class="heading">Calculator</h1>
+    <table class="caltab">
+        <tr>
+            <td colspan="4" id="text">Chandu's Calculator</td>
+        </tr>
+       <tr>
+        <td colspan="4"><input type="text" id="display" </td>
+       </tr>
+       <tr>
+        <td><input type="button" value="AC" onclick="clear1();" id="ac"></td>
+        <td><input type="button" value="%" onclick="store('%')" class="but"></td>
+        <td><input type="button" value="/" onclick="store('/')" class="but"></td>
+        <td><input type="button" value="X" onclick="store('*')" class="but"></td>
+       </tr>
+       <tr>
+        <td><input type="button" value="7" onclick="store('7')" class="but"></td>
+        <td><input type="button" value="8" onclick="store('8')" class="but"></td>
+        <td><input type="button" value="9" onclick="store('9')" class="but"></td>
+        <td><input type="button" value="+" onclick="store('+')" class="but"></td>
+       </tr>
+       <tr>
+        <td><input type="button" value="4" onclick="store('4')" class="but"></td>
+        <td><input type="button" value="5" onclick="store('5')" class="but"></td>
+        <td><input type="button" value="6" onclick="store('6')" class="but"></td>
+        <td><input type="button" value="-" onclick="store('-')" class="but"></td>
+       </tr>
+       <tr>
+        <td><input type="button" value="1" onclick="store('1')" class="but"></td>
+        <td><input type="button" value="2" onclick="store('2')" class="but"></td>
+        <td><input type="button" value="3" onclick="store('3')" class="but"></td>
+        <td rowspan="2"><input type="button" value="=" onclick="calculate()" id="equalb" class="but"></td>
+       </tr>
+       <tr>
+        <td><input type="button" value="0" onclick="store('0')" class="but"></td>
+        <td><input type="button" value="00" onclick="store('00')" class="but"></td>
+        <td><input type="button" value="." onclick="store('.')" class="but"></td>
+       </tr>
+    </table>
+</body>
+</html>
